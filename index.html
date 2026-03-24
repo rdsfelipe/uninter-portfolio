@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Felipe Araujo</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container-nav">
+      <button class="menu-hamburguer" id="btn-menu" aria-label="Abrir menu">
+        <span class="icone-abrir">☰</span>
+        <span class="icone-fechar">✕</span>
+      </button>
+
+      <nav>
+        <ul id="menu-lista">
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <button class="btn-tema" id="btn-tema" aria-label="Trocar tema">
+              <span class="icone-claro">🌙</span>
+              <span class="icone-escuro">☀️</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <div class="sobre-conteudo">
+        <div class="avatar">
+          <img src="img/felipe.jpg" alt="Felipe Araujo">
+        </div>
+
+        <div class="sobre-texto">
+          <h1>Felipe Araujo</h1>
+          <p class="subtitulo">Estudante de Análise e Desenvolvimento de Sistemas</p>
+          <p>
+            Sou estudante do 1º ano do curso de ADS
+            Tenho interesse em front-end, design de interfaces e estou sempre
+            buscando aprender novas tecnologias. Este portfólio reúne meus
+            projetos acadêmicos e pessoais desenvolvidos durante o curso.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formação -->
+    <div class="secao-alt">
+      <div class="secao-alt-inner" id="formacao">
+        <h2 class="titulo-secao">Formação</h2>
+
+        <div class="formacao-grid">
+          <div class="formacao-card">
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p class="instituicao">Universidade UNINTER</p>
+            <p class="periodo">2025 - Cursando</p>
+            <p>
+              Curso superior focado em desenvolvimento de software,
+              banco de dados, redes e infraestrutura de TI.
+            </p>
+          </div>
+
+          <div class="formacao-card">
+            <h3>Desenvolvimento Web</h3>
+            <p class="instituicao">Udemy</p>
+            <p class="periodo">2022 - Concluído</p>
+            <p>
+              Fundamentos de HTML, CSS e JavaScript para criação
+              de páginas web responsivas e interativas.
+            </p>
+          </div>
+
+          <div class="formacao-card">
+            <h3>Design de Interfaces (UI/UX)</h3>
+            <p class="instituicao">Udemy</p>
+            <p class="periodo">2020 - Concluído</p>
+            <p>
+              Princípios de design, prototipação no Figma e
+              boas práticas de experiência do usuário.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <h2 class="titulo-secao">Portfólio</h2>
+
+      <div class="portfolio-grid">
+        <div class="projeto-card">
+          <div class="projeto-imagem">
+            <img src="img/site.png" alt="Site pagina pessoal">
+          </div>
+          <div class="projeto-info">
+            <h3>Site pagina pessoal</h3>
+            <p>
+              Este é um projeto de página pessoal desenvolvido com HTML, CSS e JavaScript, apresentando informações pessoais, hobbies e países que gostaria de visitar.
+            </p>
+
+            <div class="tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <a target="_blank" href="https://rdsfelipe.github.io/uninter/" class="btn-projeto">Ver Projeto ></a>
+          </div>
+        </div>
+
+        <div class="projeto-card">
+          <div class="projeto-imagem">
+            <img src="img/projeto-figma.png" alt="Protótipo de App - Figma">
+          </div>
+          <div class="projeto-info">
+            <h3>Protótipo de App - Figma</h3>
+            <p>
+              Protótipo de alta fidelidade de um aplicativo mobile
+              desenvolvido no Figma. Inclui fluxo de navegação,
+              componentes reutilizáveis e design system básico.
+            </p>
+            <div class="tags">
+              <span class="tag">Figma</span>
+              <span class="tag">UI Design</span>
+              <span class="tag">Prototipação</span>
+            </div>
+            <a target="_blank" href="https://www.figma.com/proto/gHpO41vjdIuFXe9MrZRhgX/AraBank-APP?node-id=32-55&starting-point-node-id=32%3A55" class="btn-projeto">Ver Projeto ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Contato -->
+    <div class="secao-alt">
+      <div class="secao-alt-inner" id="contato">
+        <h2 class="titulo-secao">Contato</h2>
+
+        <div class="contato-conteudo">
+          <p>
+            Tem alguma dúvida ou quer conversar sobre um projeto?
+            Preencha o formulário abaixo e entrarei em contato!
+          </p>
+
+          <form id="formulario-contato" class="formulario-contato" novalidate>
+
+            <div class="campo-grupo">
+              <label for="campo-nome">Nome</label>
+              <input type="text" id="campo-nome" placeholder="Seu nome completo">
+              <span class="msg-erro"></span>
+            </div>
+
+            <div class="campo-grupo">
+              <label for="campo-email">E-mail</label>
+              <input type="email" id="campo-email" placeholder="seu.email@exemplo.com">
+              <span class="msg-erro"></span>
+            </div>
+
+            <div class="campo-grupo">
+              <label for="campo-assunto">Assunto</label>
+              <input type="text" id="campo-assunto" placeholder="Assunto da mensagem">
+              <span class="msg-erro"></span>
+            </div>
+
+            <div class="campo-grupo">
+              <label for="campo-mensagem">Mensagem</label>
+              <textarea id="campo-mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+              <span class="msg-erro"></span>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer>
+    <p>© 2026 Felipe Araujo - Projeto acadêmico desenvolvido para a disciplina de Análise e Desenvolvimento de Sistemas.</p>
+  </footer>
+
+  <div class="modal-overlay" id="modal-sucesso">
+    <div class="modal-caixa">
+      <h3>Mensagem Enviada!</h3>
+      <p>Obrigado pelo contato. Responderei o mais breve possível.</p>
+      <button class="btn-fechar-modal" id="btn-fechar-modal">OK, entendi!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
